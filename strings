@@ -1,0 +1,14 @@
+// Word Blanks
+
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+    var result = "";
+    // Your code below this line
+    result = "The " + myAdjective + " " + myNoun + " " + myVerb + " " + myAdverb + " " + "into the forest.";
+
+    // Your code above this line
+    return result;
+}
+
+// Change the words here to test your function
+
+console.log(wordBlanks("dog", "big", "ran", "quickly"));
