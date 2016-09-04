@@ -38,3 +38,38 @@ var myArray = [
 ];
 myArray.push(["dog", 3]);
 console.log(myArray);
+
+// Extract data from end of Array via pop
+var myArray = [
+    ["John", 23],
+    ["cat", 2]
+];
+var removedFromMyArray = myArray.pop();
+console.log(removedFromMyArray);
+
+// Extract data from beginning of Array via shift
+var myArray = [
+    ["John", 23],
+    ["dog", 3]
+];
+var removedFromMyArray = myArray.shift();
+console.log(removedFromMyArray);
+
+//  Unshift:  add elements to beginning of array
+var myArray = [
+    ["John", 23],
+    ["dog", 3]
+];
+myArray.shift();
+myArray.unshift(["Paul", 35]);
+console.log(myArray);
+
+// Shopping List: Multidimensional Array
+var myList = [
+    ["Chocolate bar", 10],
+    ["Apple", 4],
+    ["Orange", 8],
+    ["Banana", 12],
+    ["Garlic", 8]
+];
+console.log(myList);

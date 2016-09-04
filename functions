@@ -1,0 +1,85 @@
+// Function:  creation and calling
+function reusableFunction() {
+    console.log("Hi World");
+}
+
+reusableFunction();
+
+// Function: passing values via parameters
+// Parameters are placeholder variables for values that will be passed into a function.
+// Arguments are the actual values passed into a function.
+function functionWithArgs(a, b) {
+    console.log(a + b);
+}
+functionWithArgs(1, 2);
+
+// Scope is the visibility of variables
+// Global scope are variables declared outside a function
+// variables used without the "var" keyword are automatically created in global scope
+
+var myGlobal = 10;
+
+function fun1() {
+    oopsGlobal = 5;
+}
+
+function fun2() {
+    var output = "";
+    if (typeof myGlobal != "undefined") {
+        output += "myGlobal: " + myGlobal;
+    }
+    if (typeof oopsGlobal != "undefined") {
+        output += " oopsGlobal: " + oopsGlobal;
+    }
+    console.log(output);
+}
+
+// Local Scope:  variables created within a function including function parameters
+
+function myLocalScope() {
+    var myVar = "hi";
+    console.log(myVar);
+}
+myLocalScope();
+
+// Global vs Local Scope: when a variable name is used in both global and local scope, local takes precedence
+var outerWear = "T-Shirt";
+
+function myOutfit() {
+    var outerWear = "sweater";
+    return outerWear;
+}
+console.log(myOutfit());
+
+// Return values from function via Return
+
+function timesFive(num) {
+    return num * 5;
+}
+
+console.log(timesFive(5));
+
+// Assigment with a returned values
+var processed = 0;
+
+function processArg(num) {
+    return (num + 3) / 5;
+}
+
+processed = processArg(7);
+console.log(processed);
+
+// Stand in Line:  add number to end of array, then remove the first element of array and return it.
+
+function nextInLine(arr, item) {
+    arr.push(item);
+    var removeFirst = arr.shift();
+    return removeFirst;
+}
+// Test Setup
+var testArr = [1, 2, 3, 4, 5];
+
+// Display Code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6)); // Modify this line to test
+console.log("After: " + JSON.stringify(testArr));
