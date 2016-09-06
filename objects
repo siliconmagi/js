@@ -1,0 +1,20 @@
+// Objects
+var myDog = {
+    "name": "Anubis",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["Man", "Police"]
+};
+
+// Accessing Object Properties with Dot operators
+var testObj = {
+    "hat": "ballcap",
+    "shirt": "jersey",
+    "shoes": "cleats"
+};
+
+var hatValue = testObj.hat;
+var shirtValue = testObj.shirt;
+
+console.log(hatValue);
+console.log(shirtValue);
